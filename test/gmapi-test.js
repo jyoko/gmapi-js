@@ -3,13 +3,13 @@
  *
  */
 
+process.env.NODE_ENV = 'test';
+
 var P = require('bluebird');
 var should = require('should');
 var sinon = require('sinon');
 var request = require('request');
 var askGM = require(__dirname + '/../vehicles/gmapi');
-
-process.env.NODE_ENV = 'test';
 
 /*
  * Create generic GM Response objects and matching translated objects for

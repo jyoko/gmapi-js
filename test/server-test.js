@@ -3,13 +3,13 @@
  *
  */
 
+process.env.NODE_ENV = 'test';
+
 var sinon = require('sinon');
 var P = require('bluebird');
 var request = require('supertest');
 var askGM = require(__dirname + '/../vehicles/gmapi');
 var server = require(__dirname + '/../server.js').app;
-
-process.env.NODE_ENV = 'test';
 
 /*
  * Objects for use in below tests
